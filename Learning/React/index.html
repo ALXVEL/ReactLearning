@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script> 
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+</head>
+<body>
+
+    <div id='app'></div>
+    
+    <script>
+        class App extends React.Component {
+            render(){
+                return ( //can't use class, must use className
+                    <div className = 'app-contenct'> 
+                        <h1>Hey ninja </h1>
+                    </div>
+                    
+                )
+                // JSX is what allows us to write html inside javascript
+                // there should always be 1 route element ex. div covers all
+            } //must always have this function 
+        }
+
+        ReactDOM.render(<App />, document.getElementById('app')); // first parameter: class in HTML (self closing), second parameter: where to render it (inside the div)
+    </script>
+
+</body>
+</html>
